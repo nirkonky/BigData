@@ -1,4 +1,4 @@
-package Canopy;
+package ac.konky.nir.algorithms;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -32,7 +32,6 @@ public class CanopyReducer extends
 	protected void reduce(IntWritable key, Iterable<ClusterCenter> values,
 			Context context) throws IOException, InterruptedException {
 		numberOfVectors=new Integer(key+"");
-		//System.out.println(key.toString());
 		for(ClusterCenter valueCenter : values)
 		{
 
@@ -40,16 +39,14 @@ public class CanopyReducer extends
 
 			for (ClusterCenter centerList : canopyCenters)
 			{
-				//remove him from the list.
+				
 				double distance = DistanceMeasurer.measureDistance(centerList, valueCenter.getCenter());
-				if ( distance <= DistanceMeasurer.T1 ) //almost the same
+				if ( distance <= DistanceMeasurer.T1 ) 
 				{
 					isClose = true;
 					if(distance > DistanceMeasurer.T2)
 					{
-						//System.out.println(centerList+" : "+ centerList.getCenter().getNeighbors());
 						centerList.getCenter().setNeighbors(centerList.getCenter().getNeighbors()+1);
-						//center.setNeighbors(center.getNeighbors()+1);
 					}
 					break;
 
@@ -57,10 +54,8 @@ public class CanopyReducer extends
 			}
 			if (!isClose)
 			{
-				//System.out.println("first Center:"+ valueCenter);
 				ClusterCenter stockvector = new ClusterCenter(valueCenter);
 				canopyCenters.add(stockvector);
-				//valueCenter.getCenter().setNeighbors(0);
 			}	
 		}
 	}
@@ -68,20 +63,19 @@ public class CanopyReducer extends
 	protected void cleanup(Context context) throws IOException,InterruptedException
 	{
 		super.cleanup(context);
-		Configuration conf = context.getConfiguration();
-		FileSystem fs = FileSystem.get(conf);
-		Path canopy = new Path("/home/training/Desktop/Kmeans/canopyCenters.seq");
+		FileSystem fs = FileSystem.get(context.getConfiguration());
+		Path canopy = new Path("files/CanopyClusterCenters/canopyCenters.seq");
+		context.getConfiguration().set("canopy.path",canopy.toString());
+		
 		final SequenceFile.Writer centerWriter = SequenceFile.createWriter(fs,context.getConfiguration(), canopy , ClusterCenter.class,DoubleWritable.class);
 		for (ClusterCenter center : canopyCenters)
 		{
-			System.out.println("Center neighbors:"+ center.getCenter().getNeighbors());
-			System.out.println(new Double(center.getCenter().getNeighbors())/new Double(numberOfVectors));
 			double finish = new Double(center.getCenter().getNeighbors())/new Double(numberOfVectors);
 			int value = center.getCenter().getNeighbors();
-			System.out.println(value);
 			centerWriter.append(center,new DoubleWritable(finish));
 			context.write(center,new DoubleWritable(finish));
 		}
-		centerWriter.close();
+		centerWriter.close();	
+		
 	}
 }
