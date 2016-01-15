@@ -9,7 +9,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 import org.apache.hadoop.mapreduce.Job;
 
-import Vector.ClusterCenter;
+import ac.konky.nir.vector.ClusterCenter;
+
 
 /* 
  * MapReduce jobs are typically implemented by using a driver class.
