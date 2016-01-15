@@ -1,0 +1,920 @@
+2015-12-19 08:28:33,993 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:28:34,017 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:28:34,179 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:28:34,194 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:28:34,208 INFO org.apache.hadoop.mapred.JobClient: Cleaning up the staging area file:/tmp/hadoop-training/mapred/staging/training1433918607/.staging/job_local1433918607_0001
+2015-12-19 08:28:34,213 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:training (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory /home/training/workspace/log_file_analysis/output already exists
+2015-12-19 08:28:57,603 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:28:57,609 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:28:57,815 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:28:57,834 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:28:57,898 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 25
+2015-12-19 08:28:59,215 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-12-19 08:28:59,225 INFO org.apache.hadoop.mapred.JobClient: Running job: job_local1675391936_0001
+2015-12-19 08:28:59,344 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-12-19 08:28:59,388 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-12-19 08:28:59,390 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000000_0
+2015-12-19 08:28:59,412 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:28:59,513 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2015-12-19 08:28:59,608 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@26b496d
+2015-12-19 08:28:59,635 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log13.txt:0+99000
+2015-12-19 08:28:59,672 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:28:59,691 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:00,360 INFO org.apache.hadoop.mapred.JobClient:  map 0% reduce 0%
+2015-12-19 08:29:00,762 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:00,765 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:01,884 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:01,884 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:02,261 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:02,273 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000000_0 is done. And is in the process of commiting
+2015-12-19 08:29:02,341 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:02,341 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000000_0' done.
+2015-12-19 08:29:02,342 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000000_0
+2015-12-19 08:29:02,342 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000001_0
+2015-12-19 08:29:02,342 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:02,345 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@744d76b4
+2015-12-19 08:29:02,353 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log23.txt:0+99000
+2015-12-19 08:29:02,354 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:02,355 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:02,557 INFO org.apache.hadoop.mapred.JobClient:  map 3% reduce 0%
+2015-12-19 08:29:02,636 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:02,638 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:02,964 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:02,964 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:03,014 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:03,036 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000001_0 is done. And is in the process of commiting
+2015-12-19 08:29:03,042 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:03,042 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000001_0' done.
+2015-12-19 08:29:03,042 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000001_0
+2015-12-19 08:29:03,042 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000002_0
+2015-12-19 08:29:03,042 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:03,049 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@14be49e0
+2015-12-19 08:29:03,053 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log4.txt:0+99000
+2015-12-19 08:29:03,055 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:03,060 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:03,181 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:03,181 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:03,389 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:03,390 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:03,427 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:03,429 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000002_0 is done. And is in the process of commiting
+2015-12-19 08:29:03,439 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:03,439 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000002_0' done.
+2015-12-19 08:29:03,439 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000002_0
+2015-12-19 08:29:03,439 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000003_0
+2015-12-19 08:29:03,440 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:03,451 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@62770d2e
+2015-12-19 08:29:03,452 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log11.txt:0+99000
+2015-12-19 08:29:03,453 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:03,454 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:03,559 INFO org.apache.hadoop.mapred.JobClient:  map 11% reduce 0%
+2015-12-19 08:29:03,615 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:03,622 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:04,016 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:04,016 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:04,051 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:04,052 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000003_0 is done. And is in the process of commiting
+2015-12-19 08:29:04,055 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:04,056 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000003_0' done.
+2015-12-19 08:29:04,056 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000003_0
+2015-12-19 08:29:04,058 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000004_0
+2015-12-19 08:29:04,059 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:04,064 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5f90a0d6
+2015-12-19 08:29:04,265 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log22.txt:0+99000
+2015-12-19 08:29:04,265 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:04,266 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:04,474 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:04,474 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:04,560 INFO org.apache.hadoop.mapred.JobClient:  map 15% reduce 0%
+2015-12-19 08:29:04,725 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:04,726 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:04,746 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:04,758 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000004_0 is done. And is in the process of commiting
+2015-12-19 08:29:04,759 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:04,759 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000004_0' done.
+2015-12-19 08:29:04,759 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000004_0
+2015-12-19 08:29:04,759 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000005_0
+2015-12-19 08:29:04,760 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:04,776 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@53797795
+2015-12-19 08:29:04,777 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log19.txt:0+99000
+2015-12-19 08:29:04,777 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:04,778 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:04,920 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:04,921 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:05,205 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,210 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:05,223 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:05,226 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000005_0 is done. And is in the process of commiting
+2015-12-19 08:29:05,231 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,232 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000005_0' done.
+2015-12-19 08:29:05,232 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000005_0
+2015-12-19 08:29:05,233 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000006_0
+2015-12-19 08:29:05,233 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:05,236 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5bf02b85
+2015-12-19 08:29:05,238 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log14.txt:0+99000
+2015-12-19 08:29:05,238 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:05,238 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:05,351 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:05,351 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:05,424 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,424 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:05,427 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:05,429 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000006_0 is done. And is in the process of commiting
+2015-12-19 08:29:05,430 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,430 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000006_0' done.
+2015-12-19 08:29:05,430 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000006_0
+2015-12-19 08:29:05,430 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000007_0
+2015-12-19 08:29:05,430 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:05,432 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5f1eb199
+2015-12-19 08:29:05,433 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log21.txt:0+99000
+2015-12-19 08:29:05,433 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:05,439 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:05,553 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:05,558 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:05,581 INFO org.apache.hadoop.mapred.JobClient:  map 28% reduce 0%
+2015-12-19 08:29:05,636 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,637 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:05,671 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:05,676 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000007_0 is done. And is in the process of commiting
+2015-12-19 08:29:05,679 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,679 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000007_0' done.
+2015-12-19 08:29:05,679 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000007_0
+2015-12-19 08:29:05,679 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000008_0
+2015-12-19 08:29:05,679 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:05,680 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6e92b1a1
+2015-12-19 08:29:05,681 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log15.txt:0+99000
+2015-12-19 08:29:05,681 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:05,681 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:05,785 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:05,785 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:05,839 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,839 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:05,843 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:05,844 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000008_0 is done. And is in the process of commiting
+2015-12-19 08:29:05,844 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:05,845 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000008_0' done.
+2015-12-19 08:29:05,845 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000008_0
+2015-12-19 08:29:05,845 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000009_0
+2015-12-19 08:29:05,845 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:05,846 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5dc1ac46
+2015-12-19 08:29:05,847 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log17.txt:0+99000
+2015-12-19 08:29:05,847 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:05,847 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:05,967 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:05,968 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:06,081 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,085 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:06,116 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:06,117 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000009_0 is done. And is in the process of commiting
+2015-12-19 08:29:06,127 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,127 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000009_0' done.
+2015-12-19 08:29:06,127 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000009_0
+2015-12-19 08:29:06,127 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000010_0
+2015-12-19 08:29:06,127 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:06,133 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1408a92
+2015-12-19 08:29:06,134 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log8.txt:0+99000
+2015-12-19 08:29:06,134 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:06,136 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:06,310 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:06,311 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:06,381 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,382 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:06,395 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:06,396 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000010_0 is done. And is in the process of commiting
+2015-12-19 08:29:06,400 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,403 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000010_0' done.
+2015-12-19 08:29:06,403 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000010_0
+2015-12-19 08:29:06,403 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000011_0
+2015-12-19 08:29:06,403 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:06,404 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@7444f787
+2015-12-19 08:29:06,405 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log20.txt:0+99000
+2015-12-19 08:29:06,405 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:06,406 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:06,582 INFO org.apache.hadoop.mapred.JobClient:  map 43% reduce 0%
+2015-12-19 08:29:06,588 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:06,588 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:06,647 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,648 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:06,659 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:06,661 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000011_0 is done. And is in the process of commiting
+2015-12-19 08:29:06,662 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,662 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000011_0' done.
+2015-12-19 08:29:06,662 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000011_0
+2015-12-19 08:29:06,662 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000012_0
+2015-12-19 08:29:06,662 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:06,663 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@359ecd80
+2015-12-19 08:29:06,664 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log1.txt:0+99000
+2015-12-19 08:29:06,664 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:06,665 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:06,778 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:06,778 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:06,812 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,812 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:06,814 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:06,816 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000012_0 is done. And is in the process of commiting
+2015-12-19 08:29:06,816 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,816 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000012_0' done.
+2015-12-19 08:29:06,816 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000012_0
+2015-12-19 08:29:06,817 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000013_0
+2015-12-19 08:29:06,817 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:06,818 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6536d9d8
+2015-12-19 08:29:06,819 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log16.txt:0+99000
+2015-12-19 08:29:06,819 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:06,819 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:06,926 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:06,931 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:06,971 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:06,972 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:07,001 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:07,003 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000013_0 is done. And is in the process of commiting
+2015-12-19 08:29:07,003 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,003 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000013_0' done.
+2015-12-19 08:29:07,004 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000013_0
+2015-12-19 08:29:07,004 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000014_0
+2015-12-19 08:29:07,004 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:07,005 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@2918958e
+2015-12-19 08:29:07,007 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log2.txt:0+99000
+2015-12-19 08:29:07,007 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:07,008 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:07,114 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:07,115 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:07,167 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,167 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:07,169 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:07,171 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000014_0 is done. And is in the process of commiting
+2015-12-19 08:29:07,171 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,171 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000014_0' done.
+2015-12-19 08:29:07,172 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000014_0
+2015-12-19 08:29:07,172 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000015_0
+2015-12-19 08:29:07,172 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:07,173 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@a98ce7e
+2015-12-19 08:29:07,174 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log12.txt:0+99000
+2015-12-19 08:29:07,175 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:07,175 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:07,281 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:07,284 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:07,334 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,335 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:07,341 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:07,343 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000015_0 is done. And is in the process of commiting
+2015-12-19 08:29:07,344 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,344 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000015_0' done.
+2015-12-19 08:29:07,344 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000015_0
+2015-12-19 08:29:07,345 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000016_0
+2015-12-19 08:29:07,345 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:07,346 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@79014e21
+2015-12-19 08:29:07,354 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log6.txt:0+99000
+2015-12-19 08:29:07,354 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:07,355 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:07,461 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:07,467 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:07,577 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,578 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:07,582 INFO org.apache.hadoop.mapred.JobClient:  map 63% reduce 0%
+2015-12-19 08:29:07,586 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:07,592 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000016_0 is done. And is in the process of commiting
+2015-12-19 08:29:07,595 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:07,596 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000016_0' done.
+2015-12-19 08:29:07,596 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000016_0
+2015-12-19 08:29:07,596 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000017_0
+2015-12-19 08:29:07,597 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:07,599 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@24c68a98
+2015-12-19 08:29:07,603 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log3.txt:0+99000
+2015-12-19 08:29:07,604 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:07,605 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:07,962 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:07,962 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:08,003 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,003 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:08,006 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:08,008 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000017_0 is done. And is in the process of commiting
+2015-12-19 08:29:08,009 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,009 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000017_0' done.
+2015-12-19 08:29:08,010 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000017_0
+2015-12-19 08:29:08,010 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000018_0
+2015-12-19 08:29:08,010 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:08,011 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6f18278a
+2015-12-19 08:29:08,015 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log24.txt:0+99000
+2015-12-19 08:29:08,015 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:08,017 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:08,196 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:08,196 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:08,341 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,341 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:08,360 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:08,378 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000018_0 is done. And is in the process of commiting
+2015-12-19 08:29:08,380 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,382 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000018_0' done.
+2015-12-19 08:29:08,382 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000018_0
+2015-12-19 08:29:08,383 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000019_0
+2015-12-19 08:29:08,386 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:08,392 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@293bdd36
+2015-12-19 08:29:08,394 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log7.txt:0+99000
+2015-12-19 08:29:08,395 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:08,395 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:08,546 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:08,546 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:08,575 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,575 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:08,578 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:08,579 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000019_0 is done. And is in the process of commiting
+2015-12-19 08:29:08,580 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,580 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000019_0' done.
+2015-12-19 08:29:08,580 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000019_0
+2015-12-19 08:29:08,580 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000020_0
+2015-12-19 08:29:08,580 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:08,581 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@17353249
+2015-12-19 08:29:08,582 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log9.txt:0+99000
+2015-12-19 08:29:08,582 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:08,583 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:08,625 INFO org.apache.hadoop.mapred.JobClient:  map 80% reduce 0%
+2015-12-19 08:29:08,684 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:08,684 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:08,720 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,721 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:08,724 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:08,725 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000020_0 is done. And is in the process of commiting
+2015-12-19 08:29:08,725 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,726 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000020_0' done.
+2015-12-19 08:29:08,726 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000020_0
+2015-12-19 08:29:08,726 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000021_0
+2015-12-19 08:29:08,726 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:08,727 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@28366573
+2015-12-19 08:29:08,728 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log18.txt:0+99000
+2015-12-19 08:29:08,728 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:08,728 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:08,830 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:08,834 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:08,869 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,870 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:08,872 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:08,874 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000021_0 is done. And is in the process of commiting
+2015-12-19 08:29:08,876 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:08,876 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000021_0' done.
+2015-12-19 08:29:08,876 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000021_0
+2015-12-19 08:29:08,876 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000022_0
+2015-12-19 08:29:08,876 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:08,877 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@3a633d51
+2015-12-19 08:29:08,878 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log10.txt:0+99000
+2015-12-19 08:29:08,878 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:08,879 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:09,017 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:09,018 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:09,067 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,067 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:09,070 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:09,072 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000022_0 is done. And is in the process of commiting
+2015-12-19 08:29:09,072 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,073 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000022_0' done.
+2015-12-19 08:29:09,073 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000022_0
+2015-12-19 08:29:09,073 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000023_0
+2015-12-19 08:29:09,073 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:09,074 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@786db724
+2015-12-19 08:29:09,075 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log0.txt:0+99000
+2015-12-19 08:29:09,075 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:09,076 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:09,187 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:09,188 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:09,277 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,279 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:09,284 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:09,287 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000023_0 is done. And is in the process of commiting
+2015-12-19 08:29:09,291 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,291 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000023_0' done.
+2015-12-19 08:29:09,291 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000023_0
+2015-12-19 08:29:09,291 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1675391936_0001_m_000024_0
+2015-12-19 08:29:09,292 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:09,297 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@58e22f2b
+2015-12-19 08:29:09,298 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/workspace/log_file_analysis/input/Log5.txt:0+99000
+2015-12-19 08:29:09,299 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:29:09,299 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:29:09,400 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:29:09,401 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:29:09,441 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,441 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:29:09,443 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:29:09,444 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_m_000024_0 is done. And is in the process of commiting
+2015-12-19 08:29:09,445 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,445 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_m_000024_0' done.
+2015-12-19 08:29:09,445 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1675391936_0001_m_000024_0
+2015-12-19 08:29:09,446 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2015-12-19 08:29:09,460 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:29:09,604 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@2a313170
+2015-12-19 08:29:09,605 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:09,626 INFO org.apache.hadoop.mapred.JobClient:  map 100% reduce 0%
+2015-12-19 08:29:09,680 INFO org.apache.hadoop.mapred.Merger: Merging 25 sorted segments
+2015-12-19 08:29:09,767 INFO org.apache.hadoop.mapred.Merger: Merging 7 intermediate segments out of a total of 25
+2015-12-19 08:29:09,830 INFO org.apache.hadoop.mapred.Merger: Merging 10 intermediate segments out of a total of 19
+2015-12-19 08:29:09,895 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 10 segments left of total size: 1914691 bytes
+2015-12-19 08:29:09,895 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:10,243 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1675391936_0001_r_000000_0 is done. And is in the process of commiting
+2015-12-19 08:29:10,243 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:29:10,243 INFO org.apache.hadoop.mapred.Task: Task attempt_local1675391936_0001_r_000000_0 is allowed to commit now
+2015-12-19 08:29:10,276 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1675391936_0001_r_000000_0' to /home/training/workspace/log_file_analysis/output
+2015-12-19 08:29:10,277 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2015-12-19 08:29:10,277 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1675391936_0001_r_000000_0' done.
+2015-12-19 08:29:10,627 INFO org.apache.hadoop.mapred.JobClient:  map 100% reduce 100%
+2015-12-19 08:29:10,628 INFO org.apache.hadoop.mapred.JobClient: Job complete: job_local1675391936_0001
+2015-12-19 08:29:10,767 INFO org.apache.hadoop.mapred.JobClient: Counters: 20
+2015-12-19 08:29:10,773 INFO org.apache.hadoop.mapred.JobClient:   File System Counters
+2015-12-19 08:29:10,774 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of bytes read=38695379
+2015-12-19 08:29:10,774 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of bytes written=30583332
+2015-12-19 08:29:10,775 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of read operations=0
+2015-12-19 08:29:10,776 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of large read operations=0
+2015-12-19 08:29:10,776 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of write operations=0
+2015-12-19 08:29:10,777 INFO org.apache.hadoop.mapred.JobClient:   Map-Reduce Framework
+2015-12-19 08:29:10,778 INFO org.apache.hadoop.mapred.JobClient:     Map input records=25000
+2015-12-19 08:29:10,780 INFO org.apache.hadoop.mapred.JobClient:     Map output records=25000
+2015-12-19 08:29:10,781 INFO org.apache.hadoop.mapred.JobClient:     Map output bytes=1864671
+2015-12-19 08:29:10,781 INFO org.apache.hadoop.mapred.JobClient:     Input split bytes=3190
+2015-12-19 08:29:10,781 INFO org.apache.hadoop.mapred.JobClient:     Combine input records=0
+2015-12-19 08:29:10,782 INFO org.apache.hadoop.mapred.JobClient:     Combine output records=0
+2015-12-19 08:29:10,782 INFO org.apache.hadoop.mapred.JobClient:     Reduce input groups=16
+2015-12-19 08:29:10,782 INFO org.apache.hadoop.mapred.JobClient:     Reduce shuffle bytes=0
+2015-12-19 08:29:10,782 INFO org.apache.hadoop.mapred.JobClient:     Reduce input records=25000
+2015-12-19 08:29:10,783 INFO org.apache.hadoop.mapred.JobClient:     Reduce output records=16
+2015-12-19 08:29:10,792 INFO org.apache.hadoop.mapred.JobClient:     Spilled Records=67000
+2015-12-19 08:29:10,793 INFO org.apache.hadoop.mapred.JobClient:     CPU time spent (ms)=0
+2015-12-19 08:29:10,794 INFO org.apache.hadoop.mapred.JobClient:     Physical memory (bytes) snapshot=0
+2015-12-19 08:29:10,794 INFO org.apache.hadoop.mapred.JobClient:     Virtual memory (bytes) snapshot=0
+2015-12-19 08:29:10,794 INFO org.apache.hadoop.mapred.JobClient:     Total committed heap usage (bytes)=4093104128
+2015-12-19 08:29:52,411 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:29:52,422 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:29:52,708 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:29:52,721 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:29:52,732 INFO org.apache.hadoop.mapred.JobClient: Cleaning up the staging area file:/tmp/hadoop-training/mapred/staging/training1433681795/.staging/job_local1433681795_0001
+2015-12-19 08:29:52,735 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:training (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory /home/training/workspace/log_file_analysis/output already exists
+2015-12-19 08:29:57,499 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:29:57,509 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:29:57,640 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:29:57,662 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:29:57,677 INFO org.apache.hadoop.mapred.JobClient: Cleaning up the staging area file:/tmp/hadoop-training/mapred/staging/training1700274124/.staging/job_local1700274124_0001
+2015-12-19 08:29:57,677 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:training (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory /home/training/workspace/log_file_analysis/output already exists
+2015-12-19 08:30:06,294 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:30:06,300 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:30:06,427 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:30:06,448 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:30:06,457 INFO org.apache.hadoop.mapred.JobClient: Cleaning up the staging area file:/tmp/hadoop-training/mapred/staging/training1050944586/.staging/job_local1050944586_0001
+2015-12-19 08:30:06,462 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:training (auth:SIMPLE) cause:org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory /home/training/workspace/log_file_analysis/output already exists
+2015-12-19 08:30:47,448 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:30:47,461 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:30:47,704 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:30:47,725 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:30:47,753 INFO org.apache.hadoop.mapred.JobClient: Cleaning up the staging area file:/tmp/hadoop-training/mapred/staging/training730031425/.staging/job_local730031425_0001
+2015-12-19 08:30:47,760 ERROR org.apache.hadoop.security.UserGroupInformation: PriviledgedActionException as:training (auth:SIMPLE) cause:org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: file:/home/training/Desktop/logfile
+2015-12-19 08:31:08,734 WARN org.apache.hadoop.conf.Configuration: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-12-19 08:31:08,743 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+2015-12-19 08:31:08,881 WARN org.apache.hadoop.mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+2015-12-19 08:31:08,898 WARN org.apache.hadoop.mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+2015-12-19 08:31:08,989 INFO org.apache.hadoop.mapreduce.lib.input.FileInputFormat: Total input paths to process : 26
+2015-12-19 08:31:09,926 INFO org.apache.hadoop.mapred.JobClient: Running job: job_local1214157232_0001
+2015-12-19 08:31:09,927 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter set in config null
+2015-12-19 08:31:09,943 INFO org.apache.hadoop.mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2015-12-19 08:31:10,245 INFO org.apache.hadoop.mapred.LocalJobRunner: Waiting for map tasks
+2015-12-19 08:31:10,248 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000000_0
+2015-12-19 08:31:10,325 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:10,492 INFO org.apache.hadoop.util.ProcessTree: setsid exited with exit code 0
+2015-12-19 08:31:10,529 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@a7e8c4d
+2015-12-19 08:31:10,537 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log13.txt:0+99000
+2015-12-19 08:31:10,550 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:10,556 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:10,938 INFO org.apache.hadoop.mapred.JobClient:  map 0% reduce 0%
+2015-12-19 08:31:10,979 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:10,980 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:14,162 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:14,167 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:14,685 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:14,691 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000000_0 is done. And is in the process of commiting
+2015-12-19 08:31:14,776 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:14,776 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000000_0' done.
+2015-12-19 08:31:14,776 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000000_0
+2015-12-19 08:31:14,777 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000001_0
+2015-12-19 08:31:14,777 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:14,781 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@1395dd5b
+2015-12-19 08:31:14,789 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log23.txt:0+99000
+2015-12-19 08:31:14,790 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:14,792 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:14,968 INFO org.apache.hadoop.mapred.JobClient:  map 3% reduce 0%
+2015-12-19 08:31:14,972 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:14,973 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:15,951 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:15,960 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:16,212 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:16,249 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000001_0 is done. And is in the process of commiting
+2015-12-19 08:31:16,265 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:16,280 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000001_0' done.
+2015-12-19 08:31:16,280 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000001_0
+2015-12-19 08:31:16,280 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000002_0
+2015-12-19 08:31:16,281 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:16,317 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@67dacccc
+2015-12-19 08:31:16,365 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log4.txt:0+99000
+2015-12-19 08:31:16,366 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:16,375 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:16,714 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:16,715 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:16,981 INFO org.apache.hadoop.mapred.JobClient:  map 7% reduce 0%
+2015-12-19 08:31:17,479 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:17,480 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:17,591 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:17,620 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000002_0 is done. And is in the process of commiting
+2015-12-19 08:31:17,636 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:17,637 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000002_0' done.
+2015-12-19 08:31:17,637 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000002_0
+2015-12-19 08:31:17,639 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000003_0
+2015-12-19 08:31:17,640 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:17,660 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6a0da90c
+2015-12-19 08:31:17,682 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log11.txt:0+99000
+2015-12-19 08:31:17,683 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:17,686 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:17,983 INFO org.apache.hadoop.mapred.JobClient:  map 11% reduce 0%
+2015-12-19 08:31:17,991 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:17,993 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:18,204 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:18,204 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:18,241 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:18,250 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000003_0 is done. And is in the process of commiting
+2015-12-19 08:31:18,253 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:18,254 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000003_0' done.
+2015-12-19 08:31:18,254 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000003_0
+2015-12-19 08:31:18,254 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000004_0
+2015-12-19 08:31:18,254 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:18,266 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@2ed7b7d9
+2015-12-19 08:31:18,267 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log22.txt:0+99000
+2015-12-19 08:31:18,267 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:18,267 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:18,380 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:18,384 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:18,489 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:18,489 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:18,509 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:18,515 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000004_0 is done. And is in the process of commiting
+2015-12-19 08:31:18,518 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:18,521 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000004_0' done.
+2015-12-19 08:31:18,521 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000004_0
+2015-12-19 08:31:18,521 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000005_0
+2015-12-19 08:31:18,521 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:18,527 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@27b4c1d7
+2015-12-19 08:31:18,587 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log19.txt:0+99000
+2015-12-19 08:31:18,591 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:18,592 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:18,990 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:18,991 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:18,991 INFO org.apache.hadoop.mapred.JobClient:  map 19% reduce 0%
+2015-12-19 08:31:19,551 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:19,552 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:19,570 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:19,578 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000005_0 is done. And is in the process of commiting
+2015-12-19 08:31:19,581 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:19,582 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000005_0' done.
+2015-12-19 08:31:19,586 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000005_0
+2015-12-19 08:31:19,586 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000006_0
+2015-12-19 08:31:19,587 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:19,591 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6f347124
+2015-12-19 08:31:19,593 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log0.txt~:0+99000
+2015-12-19 08:31:19,593 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:19,594 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:19,794 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:19,795 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:19,888 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:19,888 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:19,902 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:19,907 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000006_0 is done. And is in the process of commiting
+2015-12-19 08:31:19,916 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:19,917 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000006_0' done.
+2015-12-19 08:31:19,918 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000006_0
+2015-12-19 08:31:19,918 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000007_0
+2015-12-19 08:31:19,918 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:19,926 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@620fa83
+2015-12-19 08:31:19,932 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log14.txt:0+99000
+2015-12-19 08:31:19,936 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:19,941 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:20,185 INFO org.apache.hadoop.mapred.JobClient:  map 26% reduce 0%
+2015-12-19 08:31:20,305 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:20,305 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:20,496 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:20,496 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:20,537 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:20,548 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000007_0 is done. And is in the process of commiting
+2015-12-19 08:31:20,549 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:20,549 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000007_0' done.
+2015-12-19 08:31:20,549 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000007_0
+2015-12-19 08:31:20,549 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000008_0
+2015-12-19 08:31:20,550 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:20,556 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6e92b1a1
+2015-12-19 08:31:20,562 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log21.txt:0+99000
+2015-12-19 08:31:20,564 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:20,567 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:20,739 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:20,739 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:20,860 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:20,860 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:20,875 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:20,882 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000008_0 is done. And is in the process of commiting
+2015-12-19 08:31:20,884 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:20,885 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000008_0' done.
+2015-12-19 08:31:20,885 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000008_0
+2015-12-19 08:31:20,885 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000009_0
+2015-12-19 08:31:20,889 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:20,894 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5dc1ac46
+2015-12-19 08:31:20,895 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log15.txt:0+99000
+2015-12-19 08:31:20,896 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:20,896 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:21,063 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:21,063 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:21,149 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:21,153 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:21,167 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:21,173 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000009_0 is done. And is in the process of commiting
+2015-12-19 08:31:21,178 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:21,178 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000009_0' done.
+2015-12-19 08:31:21,180 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000009_0
+2015-12-19 08:31:21,180 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000010_0
+2015-12-19 08:31:21,180 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:21,185 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@14718242
+2015-12-19 08:31:21,186 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log17.txt:0+99000
+2015-12-19 08:31:21,186 INFO org.apache.hadoop.mapred.JobClient:  map 38% reduce 0%
+2015-12-19 08:31:21,186 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:21,187 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:21,378 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:21,379 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:21,439 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:21,448 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:21,467 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:21,476 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000010_0 is done. And is in the process of commiting
+2015-12-19 08:31:21,480 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:21,488 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000010_0' done.
+2015-12-19 08:31:21,489 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000010_0
+2015-12-19 08:31:21,489 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000011_0
+2015-12-19 08:31:21,489 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:21,502 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@52c00025
+2015-12-19 08:31:21,503 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log8.txt:0+99000
+2015-12-19 08:31:21,509 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:21,510 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:21,760 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:21,760 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:21,975 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:21,980 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:22,016 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:22,022 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000011_0 is done. And is in the process of commiting
+2015-12-19 08:31:22,031 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,031 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000011_0' done.
+2015-12-19 08:31:22,032 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000011_0
+2015-12-19 08:31:22,045 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000012_0
+2015-12-19 08:31:22,046 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:22,052 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@34b23d12
+2015-12-19 08:31:22,061 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log20.txt:0+99000
+2015-12-19 08:31:22,063 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:22,064 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:22,199 INFO org.apache.hadoop.mapred.JobClient:  map 46% reduce 0%
+2015-12-19 08:31:22,256 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:22,256 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:22,346 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,346 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:22,382 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:22,387 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000012_0 is done. And is in the process of commiting
+2015-12-19 08:31:22,389 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,389 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000012_0' done.
+2015-12-19 08:31:22,390 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000012_0
+2015-12-19 08:31:22,390 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000013_0
+2015-12-19 08:31:22,391 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:22,397 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@63d87b85
+2015-12-19 08:31:22,399 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log1.txt:0+99000
+2015-12-19 08:31:22,400 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:22,400 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:22,684 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:22,684 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:22,747 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,748 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:22,753 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:22,754 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000013_0 is done. And is in the process of commiting
+2015-12-19 08:31:22,755 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,756 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000013_0' done.
+2015-12-19 08:31:22,756 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000013_0
+2015-12-19 08:31:22,756 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000014_0
+2015-12-19 08:31:22,756 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:22,758 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5f7779e3
+2015-12-19 08:31:22,759 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log16.txt:0+99000
+2015-12-19 08:31:22,762 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:22,763 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:22,887 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:22,887 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:22,938 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,938 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:22,942 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:22,944 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000014_0 is done. And is in the process of commiting
+2015-12-19 08:31:22,946 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:22,946 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000014_0' done.
+2015-12-19 08:31:22,946 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000014_0
+2015-12-19 08:31:22,946 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000015_0
+2015-12-19 08:31:22,946 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:22,947 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@20f8395f
+2015-12-19 08:31:22,949 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log2.txt:0+99000
+2015-12-19 08:31:22,949 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:22,950 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:23,077 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:23,077 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:23,117 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:23,120 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:23,124 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:23,130 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000015_0 is done. And is in the process of commiting
+2015-12-19 08:31:23,132 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:23,132 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000015_0' done.
+2015-12-19 08:31:23,132 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000015_0
+2015-12-19 08:31:23,132 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000016_0
+2015-12-19 08:31:23,132 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:23,139 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5a4bf53e
+2015-12-19 08:31:23,144 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log12.txt:0+99000
+2015-12-19 08:31:23,144 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:23,146 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:23,295 INFO org.apache.hadoop.mapred.JobClient:  map 61% reduce 0%
+2015-12-19 08:31:23,393 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:23,393 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:23,560 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:23,560 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:23,563 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:23,571 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000016_0 is done. And is in the process of commiting
+2015-12-19 08:31:23,572 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:23,572 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000016_0' done.
+2015-12-19 08:31:23,573 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000016_0
+2015-12-19 08:31:23,573 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000017_0
+2015-12-19 08:31:23,573 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:23,582 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6f18278a
+2015-12-19 08:31:23,583 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log6.txt:0+99000
+2015-12-19 08:31:23,584 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:23,584 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:23,737 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:23,738 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:23,933 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:23,933 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:23,936 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:23,945 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000017_0 is done. And is in the process of commiting
+2015-12-19 08:31:23,946 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:23,948 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000017_0' done.
+2015-12-19 08:31:23,948 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000017_0
+2015-12-19 08:31:23,948 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000018_0
+2015-12-19 08:31:23,948 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:23,952 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@293bdd36
+2015-12-19 08:31:23,953 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log3.txt:0+99000
+2015-12-19 08:31:23,953 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:23,954 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:24,084 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:24,086 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:24,296 INFO org.apache.hadoop.mapred.JobClient:  map 69% reduce 0%
+2015-12-19 08:31:24,519 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:24,520 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:24,577 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:24,589 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000018_0 is done. And is in the process of commiting
+2015-12-19 08:31:24,597 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:24,597 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000018_0' done.
+2015-12-19 08:31:24,597 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000018_0
+2015-12-19 08:31:24,598 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000019_0
+2015-12-19 08:31:24,609 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:24,618 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@17353249
+2015-12-19 08:31:24,640 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log24.txt:0+99000
+2015-12-19 08:31:24,643 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:24,648 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:25,172 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:25,173 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:25,297 INFO org.apache.hadoop.mapred.JobClient:  map 73% reduce 0%
+2015-12-19 08:31:25,443 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:25,449 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:25,467 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:25,486 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000019_0 is done. And is in the process of commiting
+2015-12-19 08:31:25,504 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:25,505 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000019_0' done.
+2015-12-19 08:31:25,506 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000019_0
+2015-12-19 08:31:25,517 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000020_0
+2015-12-19 08:31:25,522 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:25,535 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@494b6bed
+2015-12-19 08:31:25,552 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log7.txt:0+99000
+2015-12-19 08:31:25,555 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:25,556 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:25,971 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:25,972 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:26,162 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:26,167 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:26,205 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:26,220 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000020_0 is done. And is in the process of commiting
+2015-12-19 08:31:26,236 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:26,237 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000020_0' done.
+2015-12-19 08:31:26,237 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000020_0
+2015-12-19 08:31:26,238 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000021_0
+2015-12-19 08:31:26,238 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:26,265 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@5a943dc4
+2015-12-19 08:31:26,287 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log9.txt:0+99000
+2015-12-19 08:31:26,296 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:26,297 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:26,298 INFO org.apache.hadoop.mapred.JobClient:  map 80% reduce 0%
+2015-12-19 08:31:26,695 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:26,696 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:26,988 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:26,993 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:27,055 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:27,070 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000021_0 is done. And is in the process of commiting
+2015-12-19 08:31:27,088 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:27,088 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000021_0' done.
+2015-12-19 08:31:27,089 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000021_0
+2015-12-19 08:31:27,092 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000022_0
+2015-12-19 08:31:27,096 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:27,111 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@76d67067
+2015-12-19 08:31:27,118 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log18.txt:0+99000
+2015-12-19 08:31:27,119 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:27,120 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:27,309 INFO org.apache.hadoop.mapred.JobClient:  map 84% reduce 0%
+2015-12-19 08:31:27,534 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:27,535 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:27,802 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:27,803 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:27,842 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:27,876 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000022_0 is done. And is in the process of commiting
+2015-12-19 08:31:27,894 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:27,896 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000022_0' done.
+2015-12-19 08:31:27,896 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000022_0
+2015-12-19 08:31:27,897 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000023_0
+2015-12-19 08:31:27,898 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:27,912 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@6986dda3
+2015-12-19 08:31:27,960 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log10.txt:0+99000
+2015-12-19 08:31:27,960 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:27,967 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:28,292 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:28,293 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:28,311 INFO org.apache.hadoop.mapred.JobClient:  map 88% reduce 0%
+2015-12-19 08:31:28,607 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:28,608 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:28,630 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:28,638 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000023_0 is done. And is in the process of commiting
+2015-12-19 08:31:28,646 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:28,647 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000023_0' done.
+2015-12-19 08:31:28,650 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000023_0
+2015-12-19 08:31:28,650 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000024_0
+2015-12-19 08:31:28,651 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:28,656 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@67071c84
+2015-12-19 08:31:28,663 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log0.txt:0+99000
+2015-12-19 08:31:28,665 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:28,666 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:28,913 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:28,914 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:29,196 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:29,197 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:29,236 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:29,260 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000024_0 is done. And is in the process of commiting
+2015-12-19 08:31:29,292 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:29,300 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000024_0' done.
+2015-12-19 08:31:29,303 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000024_0
+2015-12-19 08:31:29,313 INFO org.apache.hadoop.mapred.JobClient:  map 96% reduce 0%
+2015-12-19 08:31:29,315 INFO org.apache.hadoop.mapred.LocalJobRunner: Starting task: attempt_local1214157232_0001_m_000025_0
+2015-12-19 08:31:29,318 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:29,348 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@3d7dc1cb
+2015-12-19 08:31:29,365 INFO org.apache.hadoop.mapred.MapTask: Processing split: file:/home/training/Desktop/logFiles/Log5.txt:0+99000
+2015-12-19 08:31:29,368 INFO org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-12-19 08:31:29,381 INFO org.apache.hadoop.mapred.MapTask: io.sort.mb = 100
+2015-12-19 08:31:29,967 INFO org.apache.hadoop.mapred.MapTask: data buffer = 79691776/99614720
+2015-12-19 08:31:29,968 INFO org.apache.hadoop.mapred.MapTask: record buffer = 262144/327680
+2015-12-19 08:31:30,267 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:30,268 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-12-19 08:31:30,285 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-12-19 08:31:30,289 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_m_000025_0 is done. And is in the process of commiting
+2015-12-19 08:31:30,295 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:30,302 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_m_000025_0' done.
+2015-12-19 08:31:30,308 INFO org.apache.hadoop.mapred.LocalJobRunner: Finishing task: attempt_local1214157232_0001_m_000025_0
+2015-12-19 08:31:30,309 INFO org.apache.hadoop.mapred.LocalJobRunner: Map task executor complete.
+2015-12-19 08:31:30,316 INFO org.apache.hadoop.mapred.JobClient:  map 100% reduce 0%
+2015-12-19 08:31:30,352 WARN mapreduce.Counters: Group org.apache.hadoop.mapred.Task$Counter is deprecated. Use org.apache.hadoop.mapreduce.TaskCounter instead
+2015-12-19 08:31:30,605 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.util.LinuxResourceCalculatorPlugin@d6089a5
+2015-12-19 08:31:30,608 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:30,647 INFO org.apache.hadoop.mapred.Merger: Merging 26 sorted segments
+2015-12-19 08:31:30,712 INFO org.apache.hadoop.mapred.Merger: Merging 8 intermediate segments out of a total of 26
+2015-12-19 08:31:30,939 INFO org.apache.hadoop.mapred.Merger: Merging 10 intermediate segments out of a total of 19
+2015-12-19 08:31:31,213 INFO org.apache.hadoop.mapred.Merger: Down to the last merge-pass, with 10 segments left of total size: 1988876 bytes
+2015-12-19 08:31:31,214 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:32,775 INFO org.apache.hadoop.mapred.Task: Task:attempt_local1214157232_0001_r_000000_0 is done. And is in the process of commiting
+2015-12-19 08:31:32,777 INFO org.apache.hadoop.mapred.LocalJobRunner: 
+2015-12-19 08:31:32,778 INFO org.apache.hadoop.mapred.Task: Task attempt_local1214157232_0001_r_000000_0 is allowed to commit now
+2015-12-19 08:31:32,792 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_local1214157232_0001_r_000000_0' to /home/training/Desktop/output
+2015-12-19 08:31:32,793 INFO org.apache.hadoop.mapred.LocalJobRunner: reduce > reduce
+2015-12-19 08:31:32,794 INFO org.apache.hadoop.mapred.Task: Task 'attempt_local1214157232_0001_r_000000_0' done.
+2015-12-19 08:31:33,320 INFO org.apache.hadoop.mapred.JobClient:  map 100% reduce 100%
+2015-12-19 08:31:33,321 INFO org.apache.hadoop.mapred.JobClient: Job complete: job_local1214157232_0001
+2015-12-19 08:31:33,575 INFO org.apache.hadoop.mapred.JobClient: Counters: 20
+2015-12-19 08:31:33,583 INFO org.apache.hadoop.mapred.JobClient:   File System Counters
+2015-12-19 08:31:33,584 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of bytes read=41518853
+2015-12-19 08:31:33,584 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of bytes written=32760565
+2015-12-19 08:31:33,584 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of read operations=0
+2015-12-19 08:31:33,585 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of large read operations=0
+2015-12-19 08:31:33,585 INFO org.apache.hadoop.mapred.JobClient:     FILE: Number of write operations=0
+2015-12-19 08:31:33,592 INFO org.apache.hadoop.mapred.JobClient:   Map-Reduce Framework
+2015-12-19 08:31:33,593 INFO org.apache.hadoop.mapred.JobClient:     Map input records=26000
+2015-12-19 08:31:33,593 INFO org.apache.hadoop.mapred.JobClient:     Map output records=26000
+2015-12-19 08:31:33,593 INFO org.apache.hadoop.mapred.JobClient:     Map output bytes=1936856
+2015-12-19 08:31:33,594 INFO org.apache.hadoop.mapred.JobClient:     Input split bytes=2876
+2015-12-19 08:31:33,596 INFO org.apache.hadoop.mapred.JobClient:     Combine input records=0
+2015-12-19 08:31:33,597 INFO org.apache.hadoop.mapred.JobClient:     Combine output records=0
+2015-12-19 08:31:33,597 INFO org.apache.hadoop.mapred.JobClient:     Reduce input groups=16
+2015-12-19 08:31:33,598 INFO org.apache.hadoop.mapred.JobClient:     Reduce shuffle bytes=0
+2015-12-19 08:31:33,604 INFO org.apache.hadoop.mapred.JobClient:     Reduce input records=26000
+2015-12-19 08:31:33,605 INFO org.apache.hadoop.mapred.JobClient:     Reduce output records=16
+2015-12-19 08:31:33,614 INFO org.apache.hadoop.mapred.JobClient:     Spilled Records=70000
+2015-12-19 08:31:33,617 INFO org.apache.hadoop.mapred.JobClient:     CPU time spent (ms)=0
+2015-12-19 08:31:33,617 INFO org.apache.hadoop.mapred.JobClient:     Physical memory (bytes) snapshot=0
+2015-12-19 08:31:33,618 INFO org.apache.hadoop.mapred.JobClient:     Virtual memory (bytes) snapshot=0
+2015-12-19 08:31:33,644 INFO org.apache.hadoop.mapred.JobClient:     Total committed heap usage (bytes)=4163825664

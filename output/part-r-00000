@@ -1,0 +1,16 @@
+request= http://www.amazon.com/buy/something/again , userName=Baruch	1783
+request= http://www.amazon.com/buy/something/again/andagain , userName=Baruch	1055
+request= http://www.amazon.com/buy/something/again/andagain , userName=Daniela	1336
+request= http://www.google.com/search/stam , userName=Itsik	3214
+request= http://www.google.com/search/stam2 , userName=Itsik	3161
+request= http://www.google.com/search/stam3 , userName=Itsik	2123
+request= http://www.walla.co.il/news , userName=Jojo	1417
+request= http://www.walla.co.il/news/andmore , userName=Mirit	1407
+request= http://www.walla.co.il/news , userName=Orian	1054
+request= http://www.walla.co.il/news/andmore , userName=Orian	356
+request= http://www.walla.co.il/news/andmore , userName=Shay	1404
+request= http://www.amazon.com/buy/something/again/andagain , userName=Sigalit	743
+request= http://www.walla.co.il/news , userName=Sigalit	666
+request= http://www.amazon.com/buy/something , userName=Tikva	2991
+request= http://www.amazon.com/buy/something/again , userName=Tikva	1266
+request= http://www.google.com/search/stam3 , userName=Tikva	1024
