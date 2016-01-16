@@ -16,6 +16,7 @@ import ac.konky.nir.vector.CenterCentroidWritable;
 import ac.konky.nir.vector.ClusterCenter;
 import ac.konky.nir.vector.Vector;
 
+//for commit
 
 
 // calculate a new clustercenter for these vertices
@@ -34,18 +35,18 @@ public class KMeansReducer extends
 
 		Vector newCenter = new Vector();
 		List<Vector> vectorList = new LinkedList<Vector>();
-		int vectorSize = key.getCenter().getVector().length;
-		newCenter.setVector(new double[vectorSize]);
+		int vectorSize = key.getCenter().getVectorArr().length;
+		newCenter.setVectorArr(new double[vectorSize]);
 		for (Vector value : values) {
 			vectorList.add(new Vector(value));
-			for (int i = 0; i < value.getVector().length; i++) {
-				newCenter.getVector()[i] += value.getVector()[i];
+			for (int i = 0; i < value.getVectorArr().length; i++) {
+				newCenter.getVectorArr()[i] += value.getVectorArr()[i];
 			}
 		}
 		
-		for (int i = 0; i < newCenter.getVector().length; i++) {
+		for (int i = 0; i < newCenter.getVectorArr().length; i++) {
 			
-			newCenter.getVector()[i] = newCenter.getVector()[i]
+			newCenter.getVectorArr()[i] = newCenter.getVectorArr()[i]
 					/ vectorList.size();
 		}
 		

@@ -6,11 +6,14 @@ import java.io.IOException;
 import java.util.Arrays;
 
 import org.apache.hadoop.io.WritableComparable;
+//for commit
 
 public class Vector implements WritableComparable<Vector> {
 
-	private double[] vector;
+	private double[] vectorArr;
 	private int neighbors;
+	private String name;
+	
 	public Vector() {
 		super();
 	}
@@ -18,33 +21,42 @@ public class Vector implements WritableComparable<Vector> {
 	public Vector(Vector v) {
 		super();
 		this.setNeighbors(v.getNeighbors());
-		int l = v.vector.length;
-		this.vector = new double[l];
-		System.arraycopy(v.vector, 0, this.vector, 0, l);
+		int l = v.vectorArr.length;
+		this.vectorArr = new double[l];
+		this.name = v.name;
+		System.arraycopy(v.vectorArr, 0, this.vectorArr, 0, l);
 	}
 
 	public Vector(double[] a) {
 		super();
-		this.vector = a;
+		this.vectorArr = a;
+	}
+	
+	public Vector(String name, double[] arr)
+	{
+		this.vectorArr = arr;
+		this.name = name;
 	}
 	
 	
 
 	@Override
 	public void write(DataOutput out) throws IOException {
-		out.writeInt(vector.length);
-		for (int i = 0; i < vector.length; i++)
-			out.writeDouble(vector[i]);
+		out.writeInt(vectorArr.length);
+		for (int i = 0; i < vectorArr.length; i++)
+			out.writeDouble(vectorArr[i]);
 		out.writeInt(neighbors);
+		out.writeChars(name);
 	}
 
 	@Override
 	public void readFields(DataInput in) throws IOException {
 		int size = in.readInt();
-		vector = new double[size];
+		vectorArr = new double[size];
 		for (int i = 0; i < size; i++)
-			vector[i] = in.readDouble();
+			vectorArr[i] = in.readDouble();
 		neighbors=in.readInt();
+		this.name = in.readUTF();
 	}
 
 	@Override
@@ -52,8 +64,8 @@ public class Vector implements WritableComparable<Vector> {
 
 		@SuppressWarnings("unused")
 		boolean equals = true;
-		for (int i = 0; i < vector.length; i++) {
-			double c = vector[i] - o.vector[i];
+		for (int i = 0; i < vectorArr.length; i++) {
+			double c = vectorArr[i] - o.vectorArr[i];
 			if (c!= 0.0d)
 			{
 				return (int)c;
@@ -72,17 +84,19 @@ public class Vector implements WritableComparable<Vector> {
 		return this.toString().equals(obj.toString());
 	}
 
-	public double[] getVector() {
-		return vector;
+	public double[] getVectorArr() {
+		return vectorArr;
 	}
 
-	public void setVector(double[] vector) {
-		this.vector = vector;
+	public void setVectorArr(double[] vector) {
+		this.vectorArr = vector;
 	}
+
+	
 
 	@Override
 	public String toString() {
-		return "Vector [vector=" + Arrays.toString(vector) + "]";
+		return "Vector [vectorArr=" + Arrays.toString(vectorArr) + ", name="+ name + "]";
 	}
 
 	public int getNeighbors() {

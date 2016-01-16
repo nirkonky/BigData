@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.apache.hadoop.io.WritableComparable;
 
 import ac.konky.nir.vector.Vector;
+//for commit
 
 //extends Vector
 public class ClusterCenter  implements WritableComparable<ClusterCenter> {
