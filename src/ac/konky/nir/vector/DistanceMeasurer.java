@@ -1,4 +1,5 @@
 package ac.konky.nir.vector;
+//for commit
 
 import ac.konky.nir.vector.Vector;
 
@@ -10,10 +11,10 @@ public class DistanceMeasurer {
 
 	public static final double measureDistance(ClusterCenter center, Vector v) {
 		double sum = 0;
-		int length = v.getVector().length;
+		int length = v.getVectorArr().length;
 		for (int i = 0; i < length; i++) {
-			sum += Math.abs(center.getCenter().getVector()[i]
-					- v.getVector()[i]);
+			sum += Math.abs(center.getCenter().getVectorArr()[i]
+					- v.getVectorArr()[i]);
 		}
 
 		return sum;

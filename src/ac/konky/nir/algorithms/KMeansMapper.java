@@ -24,6 +24,7 @@ import ac.konky.nir.vector.ClusterCenter;
 import ac.konky.nir.vector.DistanceMeasurer;
 import ac.konky.nir.vector.Vector;
 
+//for commit
 
 public class KMeansMapper extends
 		Mapper<LongWritable,Text, ClusterCenter, Vector> {
@@ -90,7 +91,7 @@ public class KMeansMapper extends
 		canopyReader.close();
 		
 		
-		
+		//Syso
 		
 		//Reading centroids
 		Path centroids = new Path("files/KmeansCentroids/centroids.seq");

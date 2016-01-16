@@ -20,6 +20,9 @@ import ac.konky.nir.vector.ClusterCenter;
 import ac.konky.nir.vector.DistanceMeasurer;
 import ac.konky.nir.vector.Vector;
 
+
+
+//for commit
 public class CanopyMapper extends Mapper<LongWritable, Text, IntWritable, ClusterCenter> {
 
 	List<ClusterCenter> centers;
@@ -28,55 +31,47 @@ public class CanopyMapper extends Mapper<LongWritable, Text, IntWritable, Cluste
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {
 		super.setup(context);
-		this.centers = new LinkedList<ClusterCenter>();
 		Configuration conf = context.getConfiguration();
-
-		
-
-		
+		this.centers = new LinkedList<ClusterCenter>();
 		this.vectorSize = new Integer(conf.get("vectorSize")).intValue();
-		
 		System.out.println("Canopy Mapper");
 	}
 
 	@Override
 	protected void map(LongWritable key,Text value, Context context)throws IOException, InterruptedException 
 	{
-		ArrayList<String> Data = new ArrayList<String>(Arrays.asList(value.toString().split(",")));
-		for (int i = 1; i < Data.size()-vectorSize; i+=vectorSize) 
+		//ArrayList<String> data = new ArrayList<String>(Arrays.asList(value.toString().split(",")));
+		String[] data  = value.toString().split(",");
+		String name = data[0];
+		double[] vectorArr = new double[vectorSize];
+		for (int i = 1; i <= vectorSize; i++) {
+			vectorArr[i] = new Double(data[i]);
+		}				
+		Vector newVector = new Vector(name, vectorArr);
+		numberOfVectors++;
+		boolean isClose = false;
+		for (ClusterCenter center : centers)
 		{
-			double[] doubleArray = new double[vectorSize];
-			for (int j = 0; j < vectorSize; j++) {
-				doubleArray[j] = new Double(Data.get(i+j).substring(1, Data.get(i+j).length()-1));
-			}
-			
-			
-			Vector newVector = new Vector(doubleArray);
-			numberOfVectors++;
-			boolean isClose = false;
-			for (ClusterCenter center : centers)
+			double distance = DistanceMeasurer.measureDistance(center, newVector);
+			if ( distance<= DistanceMeasurer.T1 ) 
 			{
-				double distance = DistanceMeasurer.measureDistance(center, newVector);
-				if ( distance<= DistanceMeasurer.T1 ) 
+				isClose = true;    				 
+				if(distance > DistanceMeasurer.T2)
 				{
-					isClose = true;
-		         				 
-					if(distance > DistanceMeasurer.T2)
-					{
-						center.getCenter().setNeighbors(center.getCenter().getNeighbors()+1);
-					}
-					break;
+					center.getCenter().setNeighbors(center.getCenter().getNeighbors()+1);
 				}
-			
+				break;
 			}
-			if (!isClose)
-			{
-			   	ClusterCenter center = new ClusterCenter(newVector);
-		        centers.add(center);
-		        center.getCenter().setNeighbors(1);
-		    }
+			
+		}
+		if (!isClose)
+		{
+		   	ClusterCenter center = new ClusterCenter(newVector);
+		    centers.add(center);
+		    center.getCenter().setNeighbors(1);
 		}
 	}
+	
 	
 	@Override
 	protected void cleanup(Context context) throws IOException,

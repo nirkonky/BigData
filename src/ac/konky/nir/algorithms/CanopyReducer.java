@@ -15,29 +15,30 @@ import org.apache.hadoop.mapreduce.Reducer;
 import ac.konky.nir.vector.ClusterCenter;
 import ac.konky.nir.vector.DistanceMeasurer;
 
+//for commit
 
 // calculate a new clustercenter for these vertices
-public class CanopyReducer extends
-		Reducer<IntWritable,ClusterCenter,ClusterCenter, DoubleWritable> {
+public class CanopyReducer extends Reducer<IntWritable,ClusterCenter,ClusterCenter, DoubleWritable> {
 
-	List<ClusterCenter> canopyCenters;
-	int numberOfVectors;
+	List<ClusterCenter> canopyClusterCenters;
+	int numOfVectors;
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {
 		super.setup(context);
-		this.canopyCenters = new LinkedList<ClusterCenter>();
+		this.canopyClusterCenters = new LinkedList<ClusterCenter>();
 	}
 
 	@Override
-	protected void reduce(IntWritable key, Iterable<ClusterCenter> values,
-			Context context) throws IOException, InterruptedException {
-		numberOfVectors=new Integer(key+"");
+	protected void reduce(IntWritable key, Iterable<ClusterCenter> values,Context context) throws IOException, InterruptedException {
+		
+		numOfVectors=key.get();
+		
 		for(ClusterCenter valueCenter : values)
 		{
 
 			boolean isClose=false;
 
-			for (ClusterCenter centerList : canopyCenters)
+			for (ClusterCenter centerList : canopyClusterCenters)
 			{
 				
 				double distance = DistanceMeasurer.measureDistance(centerList, valueCenter.getCenter());
@@ -55,7 +56,7 @@ public class CanopyReducer extends
 			if (!isClose)
 			{
 				ClusterCenter stockvector = new ClusterCenter(valueCenter);
-				canopyCenters.add(stockvector);
+				canopyClusterCenters.add(stockvector);
 			}	
 		}
 	}
@@ -68,9 +69,9 @@ public class CanopyReducer extends
 		context.getConfiguration().set("canopy.path",canopy.toString());
 		
 		final SequenceFile.Writer centerWriter = SequenceFile.createWriter(fs,context.getConfiguration(), canopy , ClusterCenter.class,DoubleWritable.class);
-		for (ClusterCenter center : canopyCenters)
+		for (ClusterCenter center : canopyClusterCenters)
 		{
-			double finish = new Double(center.getCenter().getNeighbors())/new Double(numberOfVectors);
+			double finish = new Double(center.getCenter().getNeighbors())/new Double(numOfVectors);
 			int value = center.getCenter().getNeighbors();
 			centerWriter.append(center,new DoubleWritable(finish));
 			context.write(center,new DoubleWritable(finish));
