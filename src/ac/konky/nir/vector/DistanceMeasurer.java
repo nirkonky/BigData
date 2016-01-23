@@ -16,7 +16,6 @@ public class DistanceMeasurer {
 			sum += Math.abs(center.getCenter().getVectorArr()[i]
 					- v.getVectorArr()[i]);
 		}
-
 		return sum;
 	}
 

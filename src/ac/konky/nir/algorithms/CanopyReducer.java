@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.DoubleWritable;
@@ -30,51 +29,40 @@ public class CanopyReducer extends Reducer<IntWritable,ClusterCenter,ClusterCent
 
 	@Override
 	protected void reduce(IntWritable key, Iterable<ClusterCenter> values,Context context) throws IOException, InterruptedException {
-		
-		numOfVectors=key.get();
-		
-		for(ClusterCenter valueCenter : values)
-		{
-
+		for(ClusterCenter valueCenter : values) {
 			boolean isClose=false;
-
-			for (ClusterCenter centerList : canopyClusterCenters)
-			{
-				
+			for (ClusterCenter centerList : canopyClusterCenters) {
 				double distance = DistanceMeasurer.measureDistance(centerList, valueCenter.getCenter());
-				if ( distance <= DistanceMeasurer.T1 ) 
-				{
+				if ( distance <= DistanceMeasurer.T1 ) {
 					isClose = true;
-					if(distance > DistanceMeasurer.T2)
-					{
-						centerList.getCenter().setNeighbors(centerList.getCenter().getNeighbors()+1);
+					if(distance > DistanceMeasurer.T2) {
+						centerList.setNeighbors(centerList.getNeighbors()+1);
 					}
 					break;
-
 				}
 			}
-			if (!isClose)
-			{
-				ClusterCenter stockvector = new ClusterCenter(valueCenter);
-				canopyClusterCenters.add(stockvector);
+			if (!isClose) {
+				ClusterCenter newClusterCenterVector = new ClusterCenter(valueCenter);
+				newClusterCenterVector.getCenter().setName("Center");
+				canopyClusterCenters.add(newClusterCenterVector);
 			}	
 		}
 	}
 	@Override
 	protected void cleanup(Context context) throws IOException,InterruptedException
 	{
+		//Write sequence file with results of Canopy Cluster Center, Number of Cluster Center neighbors.
 		super.cleanup(context);
+		numOfVectors = context.getCurrentKey().get();
+		System.out.println("NUm Of Vectors:"+ numOfVectors);
 		FileSystem fs = FileSystem.get(context.getConfiguration());
 		Path canopy = new Path("files/CanopyClusterCenters/canopyCenters.seq");
 		context.getConfiguration().set("canopy.path",canopy.toString());
 		
-		final SequenceFile.Writer centerWriter = SequenceFile.createWriter(fs,context.getConfiguration(), canopy , ClusterCenter.class,DoubleWritable.class);
-		for (ClusterCenter center : canopyClusterCenters)
-		{
-			double finish = new Double(center.getCenter().getNeighbors())/new Double(numOfVectors);
-			int value = center.getCenter().getNeighbors();
-			centerWriter.append(center,new DoubleWritable(finish));
-			context.write(center,new DoubleWritable(finish));
+		@SuppressWarnings("deprecation")
+		final SequenceFile.Writer centerWriter = SequenceFile.createWriter(fs,context.getConfiguration(), canopy , ClusterCenter.class,IntWritable.class);
+		for (ClusterCenter center : canopyClusterCenters) {
+			centerWriter.append(center,new IntWritable(center.getNeighbors()));
 		}
 		centerWriter.close();	
 		

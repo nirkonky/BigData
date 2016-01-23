@@ -3,7 +3,7 @@ package ac.konky.nir.vector;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
-
+import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.WritableComparable;
 
 import ac.konky.nir.vector.Vector;
@@ -12,25 +12,26 @@ import ac.konky.nir.vector.Vector;
 //extends Vector
 public class ClusterCenter  implements WritableComparable<ClusterCenter> {
 	private Vector center;
-	private ClusterCenter[] centroids;
+	private int neighbors;
 
-
-
+	public ClusterCenter(Vector center, ClusterCenter[] centroids, int neighbors) {
+		super();
+		this.center = new Vector(center);
+		this.neighbors = neighbors;
+	}
 
 	public ClusterCenter() {
 		super();
-		//this.center = null;
+		this.neighbors=0;
+		this.center = new Vector();
 	}
 
 	public ClusterCenter(ClusterCenter other) {
 		super();
-		//System.out.println("in Copy Constructor!");
+		this.neighbors = other.neighbors;
 		this.center = new Vector(other.center);
-		//this.setNeighbors(center.getNeighbors());
 	}
 
-	
-	
 	@Override
 	public int hashCode() {
 		return this.toString().hashCode();
@@ -38,37 +39,30 @@ public class ClusterCenter  implements WritableComparable<ClusterCenter> {
 
 	@Override
 	public boolean equals(Object obj) {
-		return this.toString().equals(obj.toString());
+		return this.toString().equals(((ClusterCenter)obj).toString());
 	}
 
-	public boolean isVectorInRadius(Vector vector){
-		double distance = DistanceMeasurer.measureDistance(this,vector);
-		System.out.println(distance);
-		if ( distance <= DistanceMeasurer.T1 && distance > DistanceMeasurer.T2) //almost the same
-			return true;
-		return false;
-		
-	}
-	
 	public ClusterCenter(Vector other) {
 		super();
-		this.center = other;
+		this.center = new Vector(other);
 	}
 
 	public boolean converged(ClusterCenter c) {
-								  //true : false
-		//System.out.println("in: converged");
 		return compareTo(c) == 0 ? false : true;
 	}
 
 	@Override
 	public void write(DataOutput out) throws IOException {
-		//System.out.println("in: write");
+		IntWritable neighborsToSet = new IntWritable(neighbors);
+		neighborsToSet.write(out);
 		center.write(out);
 	}
 
 	@Override
 	public void readFields(DataInput in) throws IOException {
+		IntWritable neighborsToSet = new IntWritable();
+		neighborsToSet.readFields(in);
+		neighbors = neighborsToSet.get();
 		center = new Vector();		
 		this.center.readFields(in);
 	}
@@ -76,14 +70,6 @@ public class ClusterCenter  implements WritableComparable<ClusterCenter> {
 	@Override
 	public int compareTo(ClusterCenter o) {
 		return center.compareTo(o.getCenter());
-	}
-
-	public ClusterCenter[] getCentroids() {
-		return centroids;
-	}
-
-	public void setCentroids(ClusterCenter[] centroids) {
-		this.centroids = centroids;
 	}
 	
 	/**
@@ -95,10 +81,18 @@ public class ClusterCenter  implements WritableComparable<ClusterCenter> {
 
 	@Override
 	public String toString() {
-		return "ClusterCenter [center=" + center + "]";
+		return "ClusterCenter:[\ncenter=" + center + "\nneighbors=" + neighbors + "]";
 	}
 
+	public int getNeighbors() {
+		return neighbors;
+	}
 
+	public void setNeighbors(int neighbors) {
+		this.neighbors = neighbors;
+	}
 
-
+	public void setCenter(Vector center) {
+		this.center = center;
+	}
 }
