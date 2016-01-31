@@ -1,4 +1,4 @@
-package ac.konky.nir.algorithms;
+package solution;
 
 import java.io.IOException;
 import java.util.LinkedList;
@@ -11,16 +11,12 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.mapreduce.Reducer;
 
-import ac.konky.nir.vector.ClusterCenter;
-import ac.konky.nir.vector.DistanceMeasurer;
-
 //for commit
 
 // calculate a new clustercenter for these vertices
 public class CanopyReducer extends Reducer<IntWritable,ClusterCenter,ClusterCenter, DoubleWritable> {
 
 	List<ClusterCenter> canopyClusterCenters;
-	int numOfVectors;
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {
 		super.setup(context);
@@ -36,7 +32,7 @@ public class CanopyReducer extends Reducer<IntWritable,ClusterCenter,ClusterCent
 				if ( distance <= DistanceMeasurer.T1 ) {
 					isClose = true;
 					if(distance > DistanceMeasurer.T2) {
-						centerList.setNeighbors(centerList.getNeighbors()+1);
+						centerList.setNeighbors(centerList.getNeighbors()+ valueCenter.getNeighbors());
 					}
 					break;
 				}
@@ -44,6 +40,7 @@ public class CanopyReducer extends Reducer<IntWritable,ClusterCenter,ClusterCent
 			if (!isClose) {
 				ClusterCenter newClusterCenterVector = new ClusterCenter(valueCenter);
 				newClusterCenterVector.getCenter().setName("Center");
+				newClusterCenterVector.setNeighbors(valueCenter.getNeighbors());
 				canopyClusterCenters.add(newClusterCenterVector);
 			}	
 		}
@@ -53,10 +50,10 @@ public class CanopyReducer extends Reducer<IntWritable,ClusterCenter,ClusterCent
 	{
 		//Write sequence file with results of Canopy Cluster Center, Number of Cluster Center neighbors.
 		super.cleanup(context);
-		numOfVectors = context.getCurrentKey().get();
-		System.out.println("NUm Of Vectors:"+ numOfVectors);
 		FileSystem fs = FileSystem.get(context.getConfiguration());
-		Path canopy = new Path("files/CanopyClusterCenters/canopyCenters.seq");
+		String rootFolder = context.getConfiguration().get("rootFolder");
+		System.out.println(rootFolder);
+		Path canopy = new Path(rootFolder+"/files/CanopyClusterCenters/canopyCenters.seq");
 		context.getConfiguration().set("canopy.path",canopy.toString());
 		
 		@SuppressWarnings("deprecation")

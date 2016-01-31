@@ -1,4 +1,4 @@
-package ac.konky.nir.vector;
+package solution;
 
 import java.io.DataInput;
 import java.io.DataOutput;

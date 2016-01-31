@@ -1,10 +1,8 @@
-package ac.konky.nir.algorithms;
+package solution;
 
 import java.io.IOException;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import ac.konky.nir.vector.CenterCentroidWritableComparable;
-import ac.konky.nir.vector.Vector;
 
 //for commit
 
@@ -18,6 +16,7 @@ public class FinalKMeansReducer extends Reducer<CenterCentroidWritableComparable
 		
 		
 		String stock ="";
+		System.out.println(key.getCentroid().getCenter().getName());
 		for(Vector v: values)
 		{
 			stock +=v.getName().toString()+",";

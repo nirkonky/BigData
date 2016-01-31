@@ -1,7 +1,6 @@
-package ac.konky.nir.vector;
+package solution;
 //for commit
 
-import ac.konky.nir.vector.Vector;
 
 public class DistanceMeasurer {
 

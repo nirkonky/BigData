@@ -1,22 +1,19 @@
-package ac.konky.nir.algorithms;
+package solution;
 
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
-
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-import ac.konky.nir.vector.ClusterCenter;
-import ac.konky.nir.vector.DistanceMeasurer;
-import ac.konky.nir.vector.Vector;
-
 public class CanopyMapper extends Mapper<LongWritable, Text, IntWritable, ClusterCenter> {
 
 	List<ClusterCenter> centers;
-	int numberOfVectors;
+	public static enum Counter{
+		NUMBER_OF_VECTORS;
+	}
 	@Override
 	protected void setup(Context context) throws IOException, InterruptedException {
 		super.setup(context);
@@ -42,16 +39,17 @@ public class CanopyMapper extends Mapper<LongWritable, Text, IntWritable, Cluste
 			if ( distance<= DistanceMeasurer.T1 ) {
 				isClose = true;    				 
 				if(distance > DistanceMeasurer.T2) {
-					numberOfVectors++;
+					context.getCounter(Counter.NUMBER_OF_VECTORS).increment(1);
 					center.setNeighbors(center.getNeighbors()+1);
 				}
 				break;
 			}
 		}
 		if (!isClose) {
-			numberOfVectors++;
+			context.getCounter(Counter.NUMBER_OF_VECTORS).increment(1);
 		   	ClusterCenter center = new ClusterCenter(newVector);
 		    centers.add(center);
+		    center.setNeighbors(center.getNeighbors()+1);
 		}
 	}
 	@Override
@@ -59,7 +57,10 @@ public class CanopyMapper extends Mapper<LongWritable, Text, IntWritable, Cluste
 	protected void cleanup(Context context) throws IOException,InterruptedException {
 		super.cleanup(context);
 		for (ClusterCenter center : centers)
-			context.write(new IntWritable(numberOfVectors),center);
+		{
+			
+			context.write(new IntWritable(1),center);
+		}			
 		
 	}
 }

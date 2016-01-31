@@ -1,12 +1,11 @@
-package ac.konky.nir.vector;
+package solution;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.WritableComparable;
-
-import ac.konky.nir.vector.Vector;
 //for commit
 
 //extends Vector
@@ -45,6 +44,7 @@ public class ClusterCenter  implements WritableComparable<ClusterCenter> {
 	public ClusterCenter(Vector other) {
 		super();
 		this.center = new Vector(other);
+		this.neighbors=0;
 	}
 
 	public boolean converged(ClusterCenter c) {
